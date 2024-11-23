@@ -22,4 +22,4 @@ sudo apt install unzip -ycd /tmp/ && wget https://wordpress.org/latest.zip
 sudo unzip latest.zip -d /var/www
 sudo chown -R www-data:www-data /var/www/wordpress
 
-mv /var/www/wordpress/wp-config-sample.php /var/www/wordpress/wp-config.php
+sudo mv /var/www/wordpress/wp-config-sample.php /var/www/wordpress/wp-config.php
