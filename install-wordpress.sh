@@ -29,21 +29,22 @@
 # sudo chown -R www-data:www-data /var/www/wordpress
 
 # sudo mv /var/www/wordpress/wp-config-sample.php /var/www/wordpress/wp-config.php
-# Define database credentials
-DB_NAME="freedebt"
-DB_USER="freedebt"
-DB_PASSWORD="Shubham@94"
-DB_HOST="localhost"
+##Define database credentials
 
-# Path to the wp-config.php file
-WP_CONFIG="/var/www/wordpress/wp-config.php"
+# DB_NAME="freedebt"
+# DB_USER="freedebt"
+# DB_PASSWORD="Shubham@94"
+# DB_HOST="localhost"
 
-# Replace placeholders in wp-config.php with actual values
-sudo sed -i "s/define( 'DB_NAME', '.*' );/define( 'DB_NAME', '$DB_NAME' );/" "$WP_CONFIG"
-sudo sed -i "s/define( 'DB_USER', '.*' );/define( 'DB_USER', '$DB_USER' );/" "$WP_CONFIG"
-sudo sed -i "s/define( 'DB_PASSWORD', '.*' );/define( 'DB_PASSWORD', '$DB_PASSWORD' );/" "$WP_CONFIG"
-sudo sed -i "s/define( 'DB_HOST', '.*' );/define( 'DB_HOST', '$DB_HOST' );/" "$WP_CONFIG"
+# # Path to the wp-config.php file
+# WP_CONFIG="/var/www/wordpress/wp-config.php"
 
-# Ensure correct file permissions
-sudo chown www-data:www-data "$WP_CONFIG"
-sudo chmod 644 "$WP_CONFIG"
+# # Replace placeholders in wp-config.php with actual values
+# sudo sed -i "s/define( 'DB_NAME', '.*' );/define( 'DB_NAME', '$DB_NAME' );/" "$WP_CONFIG"
+# sudo sed -i "s/define( 'DB_USER', '.*' );/define( 'DB_USER', '$DB_USER' );/" "$WP_CONFIG"
+# sudo sed -i "s/define( 'DB_PASSWORD', '.*' );/define( 'DB_PASSWORD', '$DB_PASSWORD' );/" "$WP_CONFIG"
+# sudo sed -i "s/define( 'DB_HOST', '.*' );/define( 'DB_HOST', '$DB_HOST' );/" "$WP_CONFIG"
+
+# # Ensure correct file permissions
+# sudo chown www-data:www-data "$WP_CONFIG"
+# sudo chmod 644 "$WP_CONFIG"
