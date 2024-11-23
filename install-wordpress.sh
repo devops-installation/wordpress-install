@@ -28,7 +28,7 @@
 # sudo unzip latest.zip -d /var/www
 # sudo chown -R www-data:www-data /var/www/wordpress
 
-sudo mv /var/www/wordpress/wp-config-sample.php /var/www/wordpress/wp-config.php
+# sudo mv /var/www/wordpress/wp-config-sample.php /var/www/wordpress/wp-config.php
 # Define database credentials
 DB_NAME="freedebt"
 DB_USER="freedebt"
